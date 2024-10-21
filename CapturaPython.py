@@ -4,8 +4,8 @@ from mysql.connector import connect, Error
 
 config = {
   'user': 'root',
-  'password': '#Gf23636497880',
-  'host': 'localhost',
+  'password': 'urubu100',
+  'host': '52.71.94.239',
   'database': 'Sparrow'
 }
 

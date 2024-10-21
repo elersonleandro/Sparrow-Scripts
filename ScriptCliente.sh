@@ -15,13 +15,13 @@ git clone https://github.com/elersonleandro/Sparrow-Scripts.git > /dev/null 2>&1
 cd Sparrow-Scripts
 
 echo -e "${GREEN}Inicializando a captura pelo Kotlin${NC}"
-sudo java -jar Looca-1.0-SNAPSHOT-jar-with-dependencies.jar
+sudo java -jar Looca-1.0-SNAPSHOT-jar-with-dependencies.jar & 
 
 echo -e "${GREEN}Fazendo instalação do Python${NC}"
 sudo apt install python3  -y > /dev/null 2>&1
 
 echo -e "${GREEN}Baixando e criando ambiente virtual venv${NC}"
-sudo apt install python3-venv > /dev/null 2>&1
+sudo apt install python3-venv -y > /dev/null 2>&1
 
 python3 -m venv venv > /dev/null 2>&1
 source venv/bin/activate

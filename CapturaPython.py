@@ -28,7 +28,6 @@ try:
         db = connect(**config)
         if db.is_connected():
             db_info = db.get_server_info()
-            print('Connected to MySQL server version -', db_info)
                     
             with db.cursor() as cursor:
                 query1 = (f"SELECT * FROM maquina WHERE endereco_mac = '{mac_address}'")
@@ -64,7 +63,6 @@ if(tamanho > 0):
                 db = connect(**config)
                 if db.is_connected():
                     db_info = db.get_server_info()
-                    print('Connected to MySQL server version -', db_info)
                 
                 with db.cursor() as cursor:
                     query1 = ("INSERT INTO Sparrow.dado_capturado VALUES "
@@ -89,14 +87,12 @@ if(tamanho > 0):
 
         disk = psutil.disk_usage("/")[3]
 
-        print('------------------------------------')
         print(f"Espaço de disco disponível: {disk}%")
 
         try:
                 db = connect(**config)
                 if db.is_connected():
                     db_info = db.get_server_info()
-                    print('Connected to MySQL server version -', db_info)
                 
                 with db.cursor() as cursor:
                     query1 = ("INSERT INTO Sparrow.dado_capturado VALUES "

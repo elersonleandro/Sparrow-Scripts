@@ -73,7 +73,7 @@ if(tamanho > 0):
                     cursor.execute(query1)
                     cursor.execute(query2)
                     db.commit()
-                    print(cursor.rowcount, "registro inserido")
+                    print("Inserido no banco de dados com sucesso")
                 
                 cursor.close()
                 db.close()
@@ -100,7 +100,7 @@ if(tamanho > 0):
                     
                     cursor.execute(query1)
                     db.commit()
-                    print(cursor.rowcount, "registro inserido")
+                    print("Inserido no banco de dados com sucesso")
                 
                 cursor.close()
                 db.close()

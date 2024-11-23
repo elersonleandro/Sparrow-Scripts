@@ -66,9 +66,9 @@ if(tamanho > 0):
                 
                 with db.cursor() as cursor:
                     query1 = ("INSERT INTO Sparrow.dado_capturado VALUES "
-                            f"(default, {cpu}, current_timestamp(),{result[1}, {result[0]}, 1)")
+                            f"(default, {cpu}, current_timestamp(),{result[1]}, {result[0]}, 1)")
                     query2 = ("INSERT INTO Sparrow.dado_capturado VALUES "
-                            f"(default, {ram}, current_timestamp(),{result[1}, {result[0]}, 2)")
+                            f"(default, {ram}, current_timestamp(),{result[1]}, {result[0]}, 2)")
                     
                     cursor.execute(query1)
                     cursor.execute(query2)
@@ -96,7 +96,7 @@ if(tamanho > 0):
                 
                 with db.cursor() as cursor:
                     query1 = ("INSERT INTO Sparrow.dado_capturado VALUES "
-                            f"(default, {disk}, current_timestamp(),{result[1}, {result[0]}, 3)")
+                            f"(default, {disk}, current_timestamp(),{result[1]}, {result[0]}, 3)")
                     
                     cursor.execute(query1)
                     db.commit()

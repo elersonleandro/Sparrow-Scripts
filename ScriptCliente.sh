@@ -15,10 +15,10 @@ git clone https://github.com/elersonleandro/Sparrow-Scripts.git > /dev/null 2>&1
 cd Sparrow-Scripts
 
 echo -e "${GREEN}Verificando se a máquina já está cadastrada${NC}"
-sudo screen java -jar cadastrar-1.0-SNAPSHOT-jar-with-dependencies.jar 
+sudo java -jar cadastrar-maquina.jar 
 
 echo -e "${GREEN}Inicializando a captura pelo kotlin"
-sudo java -jar teste-1.0-SNAPSHOT-jar-with-dependencies.jar &
+sudo java -jar capturar.jar &
 
 echo -e "${GREEN}Fazendo instalação do Python${NC}"
 sudo apt install python3  -y > /dev/null 2>&1
